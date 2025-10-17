@@ -16,9 +16,9 @@
 <body class="h-screen bg-neutral-900 relative">
   <nav class="bg-black/0 ml-auto navbar-of sm:hidden z-50" id="navbar">
     <div class="grid gap-1" id="rian">
-      <div class="w-7 h-1 bg-white transition-all ease-in-out"></div>
-      <div class="w-7 h-1 bg-white transition-all ease-in-out"></div>
-      <div class="w-7 h-1 bg-white transition-all ease-in-out"></div>
+      <div class="w-7 h-1 bg-white dark:bg-white transition-all ease-in-out"></div>
+      <div class="w-7 h-1 bg-white dark:bg-white transition-all ease-in-out"></div>
+      <div class="w-7 h-1 bg-white dark:bg-white transition-all ease-in-out"></div>
     </div>
 
     <div class="hidden" id="li">
@@ -451,28 +451,28 @@
         </div>
       </div>
     </div>
-     <footer class=" bg-neutral-700 rounded-lg shadow-sm m-4 text-white">
-    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm sm:text-center">© 2025 <a href="" class="hover:underline">Rian™</a>. Bismillah engenier.
-      </span>
-      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium sm:mt-0">
-        <li>
-          <a href="#" class="hover:underline me-4 md:me-6">Home</a>
-        </li>
-        <li>
-          <a href="#" class="hover:underline me-4 md:me-6">About</a>
-        </li>
-        <li>
-          <a href="#" class="hover:underline me-4 md:me-6">Skill</a>
-        </li>
-        <li>
-          <a href="#" class="hover:underline">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+    <footer class=" bg-neutral-700 rounded-lg shadow-sm m-4 text-white">
+      <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm sm:text-center">© 2025 <a href="" class="hover:underline">Rian™</a>. Bismillah engenier.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium sm:mt-0">
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Home</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">About</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Skill</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </div>
-  
+
 
   <!-- <div class="h-[200px]"></div> -->
   <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
@@ -480,7 +480,7 @@
   <script>
     function tampilkanAlert() {
       Swal.fire({
-        icon: 'info',                 
+        icon: 'info',
         title: 'Layanan Belum Tersedia',
         text: 'Maaf, layanan ini belum tersedia saat ini.',
         confirmButtonText: 'Oke'
@@ -507,20 +507,20 @@
       }
     );
 
-    (function() {
+    (function () {
       const navItems = Array.from(document.querySelectorAll('[id^="nav-"]'));
       const smallNavbar = document.getElementById('navbar');
 
       const map = {
         home: ['#nav-home'],
         about: ['#nav-about'],
-        skill: ['#nav-skill', '#nav-skil'], 
-        contac: ['#nav-contac', '#nav-kontak'] 
+        skill: ['#nav-skill', '#nav-skil'],
+        contac: ['#nav-contac', '#nav-kontak']
       };
 
       function clearActive() {
-        navItems.forEach(el => el.classList.remove('ring-2','ring-white'));
-        if (smallNavbar) smallNavbar.classList.remove('ring-2','ring-white');
+        navItems.forEach(el => el.classList.remove('ring-2', 'ring-white'));
+        if (smallNavbar) smallNavbar.classList.remove('ring-2', 'ring-white');
       }
 
       function setActiveForSection(sectionId) {
@@ -532,9 +532,9 @@
           if (el) { found = el; break; }
         }
         if (found) {
-          found.classList.add('ring-2','ring-white');
+          found.classList.add('ring-2', 'ring-white');
         } else if (smallNavbar) {
-          smallNavbar.classList.add('ring-2','ring-white');
+          smallNavbar.classList.add('ring-2', 'ring-white');
         }
       }
 
@@ -546,14 +546,14 @@
         });
       }, { root: null, rootMargin: '0px', threshold: 0.55 });
 
-      ['home','about','skill','contac'].forEach(id => {
+      ['home', 'about', 'skill', 'contac'].forEach(id => {
         const el = document.getElementById(id);
         if (el) observer.observe(el);
       });
     })();
 
 
-    
+
   </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
