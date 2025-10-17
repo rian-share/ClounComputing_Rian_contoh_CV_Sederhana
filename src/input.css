@@ -9,6 +9,10 @@
     @apply w-fit ml-auto mt-6 p-3 py-6 rounded-l-xl bg-black/40 right-0 fixed
 }
 
+.scroll-hidden::-webkit-scrollbar{
+    width: 1px;
+}
+
 .burger :nth-child(1){
     @apply origin-top-left rotate-40
 }
