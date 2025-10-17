@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@theme{
+    --font-orbitron : "Orbitron";
+}
+
+.navbar-of{
+    @apply w-fit ml-auto mt-6 p-3 py-6 rounded-l-xl bg-black/40 right-0 fixed
+}
+
+.burger :nth-child(1){
+    @apply origin-top-left rotate-40
+}
+.burger :nth-child(2){
+    @apply invisible
+}
+.burger :nth-child(3){
+    @apply origin-bottom-left -rotate-40
+}
+
+.menu{
+    @apply p-3 mr-2 w-fit ml-auto
+}
+
+.list_item{
+    @apply flex h-[90%] justify-center items-center
+}
