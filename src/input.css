@@ -30,3 +30,9 @@
 .list_item{
     @apply flex h-[90%] justify-center items-center
 }
+
+    #home, #about, #skill, #contac { min-height: 100vh; box-sizing: border-box; padding-top: 4.5rem; }
+
+    nav.fixed { z-index: 60; }
+
+    [id^="nav-"] { transition: box-shadow 200ms ease, transform 150ms ease; }
